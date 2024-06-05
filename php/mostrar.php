@@ -65,7 +65,7 @@ if($query->rowCount() <= 0) {
                <td> <?php printf($row["apellidos"]);?></td>
                <td> <?php printf($row["telefono"]);?></td>
                <td> <?php printf($row["correo"]);?></td>
-               <td> <?php printf($row["ciudad"]);?></td>
+               <td> <?php printf($row["direccion"]);?></td>
                <td> <?php printf($row["carrera"]);?></td>
                <td> <?php printf($row["fin_estudio"]);?></td>
                </tr>
