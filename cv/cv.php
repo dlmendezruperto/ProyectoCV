@@ -120,7 +120,7 @@ if($numeroRegistros<=0)
     </section>
     
 
-    <br><br><center><button type="button"><a href="index.php">Crear cuenta en LinkedIn</a></button>
+    <br><br><center><button type="button"><a href="https://www.linkedin.com/signup?_l=es">Crear cuenta en LinkedIn</a></button>
 <br><br>
     <center><button id="download">Descargar PDF</button></center>
 <br><br>
