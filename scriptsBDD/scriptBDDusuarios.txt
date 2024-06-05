@@ -1,0 +1,5 @@
+CREATE TABLE usuarios (
+  username int(8) NOT NULL,
+  password varchar(255) NOT NULL,
+  fecha_registro datetime DEFAULT NULL,
+  nombre varchar(255) DEFAULT NULL, PRIMARY KEY (username))
