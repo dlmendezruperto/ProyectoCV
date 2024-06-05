@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+}
+
+h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.botones1y2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.botones3y4{
+    display: flex;
+    justify-content: center;
+}
+
+.asado{
+    margin-left: 200px;
+}
+
+ul{
+    list-style: none;
+}
+
+.icono{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+#cabecera{
+    background: #6d47ab;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-main{
+    padding-left: 30px;
+}
+
+.nav-menu-right{
+    padding-right: 30px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    background-color: #732487;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+}
+
+i{
+    color: #ffffff;
+}
+
+.contenedorboton {
+    display: flex; /* Activar flexbox */
+    justify-content: space-evenly; /* Distribuir los botones uniformemente */
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  input[type="submit"] {
+    background-color: #353335;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #615d61;
+  }
+  
+  
+  button {
+    background-color: #353335;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #615d61;
+  }
+
+  .gracias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word
+  }
+
+  table td,th {
+    border-bottom: 2px solid rgba(168, 168, 168, 0.575)
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+}
+
+table td,
+#tabla th {
+    padding-left: 40px;  
+    padding-right: 40px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table th {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+tr:hover {
+td{
+background-color: rgb(245, 245, 245);
+color: #0a002e;}}
+
+.btn{
+    background: rgb(174, 140, 227);
+    cursor: pointer; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

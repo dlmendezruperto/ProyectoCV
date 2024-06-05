@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    background-color: #ecdeff;
+}
+
+.botones1y2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.botones3y4{
+    display: flex;
+    justify-content: center;
+}
+
+.asado{
+    margin-left: 200px;
+}
+
+ul{
+    list-style: none;
+}
+
+.icono{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+#cabecera{
+    background: #6d47ab;
+    padding: 10px 0;
+    font-family: "Brush-script";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-main{
+    padding-left: 30px;
+}
+
+.nav-menu-right{
+    padding-right: 30px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    background-color: #732487;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+}
+
+i{
+    color: #ffffff;
+}
+
+.contenedorboton {
+    display: flex; /* Activar flexbox */
+    justify-content: space-evenly; /* Distribuir los botones uniformemente */
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  input:hover {
+    background-color: #d1dae8;
+
+  }
+  textarea:hover{
+    background-color: #d1dae8;
+
+  }
+  input{
+        border-radius: 10px; /* Ajusta este valor según el grado de redondez deseado */
+        border: 1px solid #ccc;
+        padding: 15px;
+        font-size: 16px;
+        background-color: #dddfe3;
+        width: 30%;
+        margin-top: 8px;
+  }
+  select{
+    border-radius: 10px; /* Ajusta este valor según el grado de redondez deseado */
+        border: 1px solid #ccc;
+        padding: 15px;
+        font-size: 16px;
+        background-color: #dddfe3;
+        width: 100%;
+        margin-top: 8px;
+  }
+
+  .left input, .right input {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+.left input[type="file"] {
+  width: 70%; /* Ajusta el ancho al 100% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+#idioma1, #idioma2, #idioma3{
+  width: 85%;
+  padding-right: 15px;
+}
+#foto{
+  width: 100%;
+}
+
+
+  button {
+    background-color: #49346b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #5a60a2;
+  }
+  #enviar input{
+    background-color: #5a60a2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #enviar input:hover{
+    background-color: #5a63c9;
+  }
+  section{
+    width: 60%;
+    margin: 0 auto; /* Centra el div horizontalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border: 1px solid #000; /* Solo para visualizar mejor el contenedor */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    background-color: #ffffff;
+    border-radius: 10px; /* Ajusta este valor según el grado de redondez deseado */
+    border: 1px solid #ccc;
+
+  }
+
+  label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3c3c3c;
+    font-size: 100%;
+  }
+
+  h2{
+    width: 100%;
+    font-size: 120%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  h3{
+    font-size: 120%;
+    color: #352e79;
+  }
+  textarea{
+    border-radius: 10px; /* Ajusta este valor según el grado de redondez deseado */
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+        width: 85%;
+        height: 65%;
+        background-color: #dddfe3;
+        margin-top: 8px;
+  }
+
+  
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.right {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 0px;
+  }
+

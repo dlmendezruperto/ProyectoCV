@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/stylee.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+
+    <div id="agrupar">
+
+        <header id="cabecera">
+            <h1><i class="bi bi-file-earmark-person"></i> ITO-Vitae </h1>
+        </header>
+    
+        <div id="seccion">
+            <form id="reg" action="php/registro.php" method="post">
+            <h2>Registro</h2>
+            
+            <div id="etiqueta"> 
+                <label for="control">N&uacute;mero de control:</label><br>
+                <input type="text" id="control" name="control" class="control" placeholder="Ingresa el numero de control" required><br><br>
+            </div><br><br>
+
+            <div id="etiqueta"> 
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Ingresa el numero de control" required><br><br>
+            </div><br><br>
+
+            <div id="etiqueta"> 
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" class="password" name="password" placeholder="Ingresa la contraseña" required><br><br>
+            </div><br><br>
+
+            <div><input class="boton" type="submit" value="Registrarse"></div>
+            <div> <button id="boton2" type="button"><a href="index.html">Regresar</a></button></div>
+        </div>
+        <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="javascript/validar.js"></script>
+</body>
+</html>
