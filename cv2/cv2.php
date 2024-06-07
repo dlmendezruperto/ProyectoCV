@@ -69,7 +69,7 @@ if($numeroRegistros<=0)
         <div class="u-container-style u-custom-color-2 u-group u-shape-rectangle u-group-1">
           <div class="u-container-layout u-container-layout-1">
             <div class="u-preserve-proportions u-shape u-shape-circle u-white u-shape-2"></div>
-            <img class="u-image u-image-circle u-image-1" src="../img/perfil.jpg" alt="" data-image-width="400" data-image-height="265">
+            <img class="u-image u-image-circle u-image-1" src="data:image/jpg;base64,<?php echo base64_encode($row['foto'])?>">
           </div>
         </div>
         <h1 class="u-text u-text-1"><?php printf($row["nombre"]);?> <?php printf($row["apellidos"]); ?></h1>
@@ -136,6 +136,10 @@ if($numeroRegistros<=0)
 <br><br>
 
 <center><button id="download">Descargar PDF</button></center><br><br>
+
+<br><br>
+    <center><a href="../php/procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
+    <br><br>
 
 <script>
     document.getElementById('download').addEventListener('click', () => {

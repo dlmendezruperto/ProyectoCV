@@ -70,7 +70,7 @@ if($numeroRegistros<=0)
         <div class="u-custom-color-4 u-radius u-shape u-shape-round u-shape-1"></div>
         <div class="u-preserve-proportions u-shape u-shape-circle u-white u-shape-2"></div>
         <div class="u-border-10 u-border-custom-color-4 u-preserve-proportions u-shape u-shape-circle u-shape-3"></div>
-        <img class="u-image u-image-circle u-image-1" src="images/cbeb218e2831f2bca7defb925fcafcefb9991133c28262038c3867251fe160641bea1c65f5b83b29cc21e7555e7f9c3dc9c0eea19fdde2df2201fe_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
+        <img class="u-image u-image-circle u-image-1" src="data:image/jpg;base64,<?php echo base64_encode($row['foto'])?>" alt="" data-image-width="1280" data-image-height="853">
         <h1 class="u-align-center u-text u-text-1"> <?php printf($row["nombre"]); ?> <?php printf($row["apellidos"]); ?></h1>
         <h6 class="u-align-center u-text u-text-black u-text-2">Mi perfil </h6>
         <div class="u-container-style u-custom-color-4 u-group u-shape-rectangle u-group-1">
@@ -97,6 +97,7 @@ if($numeroRegistros<=0)
         <p class="u-align-center u-text u-text-10"> <?php printf($row["empresa2"]); ?>&nbsp;<br><?php printf($row["duracion2"]); ?>&nbsp;<br><?php printf($row["puesto2"]); ?>&nbsp;<br><?php printf($row["descripcion2"]); ?>
         </p>
         <ul class="u-text u-text-default u-text-11">
+          <br><br>
           <li><?php printf($row["idioma1"]); ?></li>
           <li><?php printf($row["idioma2"]); ?></li>
           <li><?php printf($row["idioma3"]); ?></li>
@@ -129,7 +130,11 @@ if($numeroRegistros<=0)
     <br><br><center><button type="button"><a href="https://www.linkedin.com/signup?_l=es">Crear cuenta en LinkedIn</a></button>
 <br><br>
 
-<center><button id="download">Descargar PDF</button></center><br><br>
+<center><button id="download">Descargar PDF</button></center>
+
+<br><br>
+    <center><a href="../php/procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
+    <br><br>
 
 <script>
     document.getElementById('download').addEventListener('click', () => {

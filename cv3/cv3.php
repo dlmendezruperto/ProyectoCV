@@ -43,6 +43,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //echo "Conexión exitosa";
 //. $_SESSION['username']
 // Buscar el usuario en la base de datos
+
 $Query = "SELECT * FROM datos WHERE no_control ='". $_SESSION['username']."'";
 $Result = $conn->query($Query);
 
@@ -61,7 +62,7 @@ if($numeroRegistros<=0)
    ?>
    <?php
 		 // fetch_array() Obtiene una fila de resultado como un array asociativo
-         while($row = $Result->fetch()) {    
+         while($row = $Result->fetch()) {   
            ?>
   <body data-home-page="PLANTILLA2.html" data-home-page-title="PLANTILLA2" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="es">
     <section class="u-clearfix u-section-1" id="cvp2">
@@ -72,7 +73,7 @@ if($numeroRegistros<=0)
         <h6 class="u-align-center u-text u-text-body-alt-color u-text-2">Contacto </h6>
         <a href="#" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg></span>&nbsp;<?php printf($row["telefono"]); ?>
         </a>
-        <p class="u-align-center u-text u-text-body-alt-color u-text-3"><span class="u-file-icon u-icon u-text-white"><img src="images/347803-d3059af3.png" alt=""></span>&nbsp;<?php printf($row["correo"]); ?>
+        <p class="u-align-center u-text u-text-body-alt-color u-text-3"><span class="u-file-icon u-icon u-text-white"><img src="" alt=""></span>&nbsp;<?php printf($row["correo"]); ?>
         </p>
         <p class="u-align-center u-text u-text-default u-text-white u-text-4"><span class="u-file-icon u-icon u-text-white"><img src="images/3449750-689288f2.png" alt=""></span>&nbsp;&nbsp;<?php printf($row["linkedin"]); ?>
         </p>
@@ -100,7 +101,7 @@ if($numeroRegistros<=0)
           </div>
         </div>
         <p class="u-align-center u-text u-text-white u-text-11"><?php printf($row["aptitudes"]); ?></p>
-        <img class="u-image u-image-default u-image-1" src="images/cbeb218e2831f2bca7defb925fcafcefb9991133c28262038c3867251fe160641bea1c65f5b83b29cc21e7555e7f9c3dc9c0eea19fdde2df2201fe_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
+        <img class="u-image u-image-default u-image-1" src="data:image/jpg;base64,<?php echo base64_encode($row['foto'])?>" alt="" data-image-width="1280" data-image-height="853">
         <h1 class="u-text u-text-12"><?php printf($row["nombre"]); ?> <?php printf($row["apellidos"]); ?></h1>
         <div class="u-container-style u-custom-color-4 u-group u-shape-rectangle u-group-4">
           <div class="u-container-layout u-container-layout-4">
@@ -131,7 +132,11 @@ if($numeroRegistros<=0)
     <center><button type="button"><a href="https://www.linkedin.com/signup?_l=es">Crear cuenta en LinkedIn</a></button>
 <br><br>
 
-<center><button id="download">Descargar PDF</button></center><br><br>
+<center><button id="download">Descargar PDF</button></center><br>
+
+<br><br>
+    <center><a href="../php/procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
+    <br><br>
 
 <script>
     document.getElementById('download').addEventListener('click', () => {

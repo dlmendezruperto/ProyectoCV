@@ -61,6 +61,7 @@ if($numeroRegistros<=0)
    <?php
 		 // fetch_array() Obtiene una fila de resultado como un array asociativo
          while($row = $Result->fetch()) {    
+           $foto=$row["foto"];
            ?>
   <body data-home-page="PLANTILLA2.html" data-home-page-title="PLANTILLA2" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="es">
     <section class="u-clearfix u-section-1" id="cvp2">
@@ -70,7 +71,9 @@ if($numeroRegistros<=0)
         <div class="u-shape u-shape-rectangle u-white u-shape-3"></div>
         <div class="u-custom-color-2 u-shape u-shape-rectangle u-shape-4"></div>
         <div class="u-preserve-proportions u-shape u-shape-circle u-white u-shape-5"></div>
-        <img class="u-image u-image-circle u-image-1" src="../img/perfil.jpg" alt="" data-image-width="400" data-image-height="265">
+        
+       
+    <img class="u-image u-image-circle u-image-1" id="displayImage" src="data:image/jpg;base64,<?php echo base64_encode($row['foto'])?>">
         <h2 class="u-text u-text-body-alt-color u-text-1"><?php printf($row["nombre"]); ?> <?php printf($row["apellidos"]); ?></h2>
         <a href="#" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-white u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg></span>&nbsp;<?php printf($row["telefono"]); ?>
         </a>
@@ -124,6 +127,9 @@ if($numeroRegistros<=0)
 <br><br>
     <center><button id="download">Descargar PDF</button></center>
 <br><br>
+
+    <center><a href="../php/procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
+    <br><br>
 
 <script>
     document.getElementById('download').addEventListener('click', () => {
