@@ -51,7 +51,7 @@
     <center> <h1>Ingreso de datos</h1></center>
 
     <div class="datospers">
-    <form action="agregar.php" target="" method="POST">
+    <form action="agregar.php" target="" method="POST" enctype="multipart/form-data">
     <section class="f1">          <br>
              
             <h2>Datos personales</h2>
@@ -87,7 +87,8 @@
             <div class="container">
             <div class="left" width="70%">
             <label for="foto">Suba su foto:</label>
-            <br><input type="file" id="foto" name="foto" accept="image/*">
+            <br>
+            <input type="file" id="foto" name="foto" accept="image/*">
             <br>
             <div id="image-container">
             
@@ -117,6 +118,8 @@
                 reader.readAsDataURL(file);
             }
         });
+
+
     </script>
             
             <div class="container">
@@ -314,10 +317,14 @@
             <br><br>
             </section>
         <br>
-        <center> <div id="enviar"> <input type=submit value="Enviar" ></div></center>
+        <center> <div id="enviar"> <input type=submit value="Enviar"></div></center>
+        <br><br>
+        <center><a href="procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
         <br><br><br>
     </form>
     </div>
     <script type="text/javascript" src="script.js"></script> 
+    
+
 </body>
 </html>

@@ -13,3 +13,6 @@ boton2.addEventListener('click', () => {
   oculto2.style.display = 'block';
   boton2.style.display = 'none';
 });
+
+
+

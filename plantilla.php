@@ -42,14 +42,18 @@ if (!isset($_SESSION['username'])) {
     <h2>Escoja el diseño de su Curriculum Vitae:</h2>
 
     <div class="botones1y2">
-        <a href="cv/cv.php"><button class="estofado"><img src="img/cv1.JPG" alt="" height="555px"></button></a>
-        <a href="cv2/cv2.php"><button class="asado"><img src="img/cv2.JPG" alt="" height="555px"></button></a>
+        <a href="cv/cv.php"><button class="estofado"><img src="img/cv1.jpg" alt="" height="555px"></button></a>
+        <a href="cv2/cv2.php"><button class="asado"><img src="img/cv2.jpg" alt="" height="555px"></button></a>
     </div>
 
     <div class="botones3y4">
-        <a href="cv3/cv3.php"><button class="estofado"><img src="img/cv3.JPG" alt="" height="555px"></button></a>
-        <a href="cv4/cv4.php"><button class="asado"><img src="img/cv4.JPG" alt="" height="555px"></button></a>
+        <a href="cv3/cv3.php"><button class="estofado"><img src="img/cv3.jpg" alt="" height="555px"></button></a>
+        <a href="cv4/cv4.php"><button class="asado"><img src="img/cv4.jpg" alt="" height="555px"></button></a>
     </div>
+
+    <br><br>
+    <center><a href="php/procesocerrar.php"><button type="button" id="cerrar">Cerrar sesión</button></a>
+    <br><br>
 
 <br><br>
 </body>

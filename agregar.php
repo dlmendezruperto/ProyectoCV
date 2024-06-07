@@ -36,8 +36,8 @@ $oMysql = new mysqli("localhost", "root", "", "cv");
 // $conexion = pg_connect("host=localhost dbname=BASE_DE_DATOS user=USUARIO password=CONTRASEÑA");		
 //include ("conexionLocal.php"); importar el codigo de conexionlocal.php
 //poner para hacer la conexion
-
-$Query= "INSERT INTO datos VALUES ('".$_POST["no_control"]."','".$_POST["nombre"]."','".$_POST["apellidos"]."','".$_POST["direccion"]."','".$_POST["foto"]."','".$_POST["telefono"]."','".$_POST["correo"]."','".$_POST["linkedin"]."','".$_POST["aptitudes"]."','".$_POST["universidad"]."','".$_POST["carrera"]."','".$_POST["fin_estudio"]."','".$_POST["area_estudio"]."','".$_POST["empresa1"]."','".$_POST["duracion1"]."','".$_POST["puesto1"]."','".$_POST["descripcion1"]."','".$_POST["empresa2"]."','".$_POST["duracion2"]."','".$_POST["puesto2"]."','".$_POST["descripcion2"]."','".$_POST["empresa3"]."','".$_POST["duracion3"]."','".$_POST["puesto3"]."','".$_POST["descripcion3"]."','".$_POST["pasantias"]."','".$_POST["certificados"]."','".$_POST["idioma1"]."','".$_POST["idioma2"]."','".$_POST["idioma3"]."')";
+$foto=addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+$Query= "INSERT INTO datos VALUES ('".$_POST["no_control"]."','".$_POST["nombre"]."','".$_POST["apellidos"]."','".$_POST["direccion"]."','".$foto."','".$_POST["telefono"]."','".$_POST["correo"]."','".$_POST["linkedin"]."','".$_POST["aptitudes"]."','".$_POST["universidad"]."','".$_POST["carrera"]."','".$_POST["fin_estudio"]."','".$_POST["area_estudio"]."','".$_POST["empresa1"]."','".$_POST["duracion1"]."','".$_POST["puesto1"]."','".$_POST["descripcion1"]."','".$_POST["empresa2"]."','".$_POST["duracion2"]."','".$_POST["puesto2"]."','".$_POST["descripcion2"]."','".$_POST["empresa3"]."','".$_POST["duracion3"]."','".$_POST["puesto3"]."','".$_POST["descripcion3"]."','".$_POST["pasantias"]."','".$_POST["certificados"]."','".$_POST["idioma1"]."','".$_POST["idioma2"]."','".$_POST["idioma3"]."')";
           
 		  //$oMysql->query    seria como Objeto.metodo
 $Result = $oMysql->query( $Query );  // se lanza la consulta
